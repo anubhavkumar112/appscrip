@@ -1,0 +1,244 @@
+.filter {
+  width: calc(100% - 192px);
+  height: 88px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.products {
+  width: calc(100% - 192px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.ico-down img {
+  rotate: 90deg;
+}
+.showfilter {
+  width: 303px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card > img {
+  width: 300px;
+  height: 399px;
+}
+.prod-desc {
+  width: 100%;
+  font-size: 14px;
+  line-height: 16.8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.body-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.card_grid {
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.side-filters{
+  border: none;
+  font-size: 1rem;
+  display: flex;
+}
+.side-filters:active{
+  border: none;
+
+}
+
+
+.card_grid-3items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#select {
+  border: none;
+  background-color: white;
+  font-size: 18px;
+  padding: auto 0;
+  line-height: 40;
+  font-weight: 700;
+}
+#select > option {
+  background-color: white;
+  border: none;
+  text-align: right;
+  font-weight: 400;
+}
+#select > option:hover {
+  font-weight: 700;
+}
+#filter {
+  width: 300px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 5px 0 24px 0px;
+  gap: 40px;
+}
+.dnone {
+  display: none;
+}
+#filter > span,
+#filter > div {
+  width: 100%;
+}
+#filter > span > span,
+#filter > div > span {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.costomize {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 26px;
+}
+.filterlogo {
+  display: none;
+}
+.costomize > input {
+  width: 22px;
+  height: 22px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.costomize > span,
+.type-heading > span,
+#filter > div > span {
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 700;
+}
+.ideal-all {
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 400;
+  margin-top: 8px;
+  padding-bottom: 26px;
+}
+.bacored {
+  background-color: red;
+}
+.unSelect {
+  text-decoration: underline;
+  color: #777575;
+  padding-bottom: 26px;
+}
+
+#filter > div > span:nth-child(2) {
+  font-weight: 400;
+  margin-top: 8px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 26px;
+}
+.catagory-type {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.txt:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+.width75 {
+  width: calc(100% - 492px);
+  margin-left: 15px;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.catagory-type > span {
+  padding-bottom: 26px;
+}
+.catagory-type > span > span {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #252020;
+}
+.type {
+  border-bottom: 1px solid #e5e5e5;
+}
+.qty {
+  font-weight: 700;
+}
+.hidefilter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.ico img {
+  rotate: 180deg;
+}
+.zind2 {
+  z-index: 2;
+}
+.rotate270deg {
+  rotate: 270deg;
+}
+.rotate90deg {
+  rotate: 90deg;
+}
+@media screen and (max-width: 1430px) {
+  .showfilter {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .showfilter {
+    width: 170px;
+  }
+  .filter {
+    width: calc(100% - 112px);
+  }
+}
+
+/* -------------------------------------------------- */
+
+/* Media query to adjust grid layout when sidebar is shown */
+@media (max-width: 768px) {
+  .card_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card_grid-3items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .qty{
+    display: none;
+  }
+  .card_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card_grid-3items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}

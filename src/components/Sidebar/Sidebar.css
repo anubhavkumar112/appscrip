@@ -1,0 +1,23 @@
+.costomize{
+  display: flex;
+  gap:10px;
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 26px;
+}
+
+.filter-headings {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 0;
+  cursor: pointer;
+}
+.filter-headings span{
+    color: black;
+    font-weight: 600;
+}
+
+.filter_list {
+  display: flex;
+  flex-direction: column;
+}
+
